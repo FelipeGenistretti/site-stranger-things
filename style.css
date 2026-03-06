@@ -229,11 +229,31 @@ footer {
     }
 }
 
-
 .logotiposFooter {
     padding:0 7vw ;
     width: 100%;
     display: flex;
     justify-content: space-between;
     margin-bottom: 62px;
+}
+
+
+.textoInfinito {
+    width: max-content;
+    display: flex;
+
+    h3{
+        color: rgb(191, 191, 191);
+        font-size: 12vw;
+        font-family: 'Benguiat', 'sans-serif';
+        mix-blend-mode: color-dodge;
+        animation: textoInfinito 4s infinite linear;
+    }
+
+}
+
+@keyframes textoInfinito{
+    100%{
+        transform: translateX(-100%);
+    }
 }
